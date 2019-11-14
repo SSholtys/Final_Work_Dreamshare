@@ -1,0 +1,715 @@
+                                                                                    *,
+                                                                             ::after {
+                                                                                box-sizing: border-box;
+                                                                                margin: 0;
+                                                                                padding: 0;
+                                                                            }
+                                                                            
+                                                                            body {
+                                                                                max-width: 100%;
+                                                                                margin: 0 auto;
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                            }
+                                                                            
+                                                                            .container {
+                                                                                width: 100%;
+                                                                                max-width: 960px;
+                                                                                margin: 0 auto;
+                                                                                padding: 0 20px;
+                                                                                margin-top: 90px;
+                                                                            }
+                                                                            
+                                                                            ul {
+                                                                                list-style: none;
+                                                                            }
+                                                                            
+                                                                            li {
+                                                                                margin: 0;
+                                                                                padding: 0;
+                                                                            }
+                                                                            
+                                                                            a {
+                                                                                text-decoration: none;
+                                                                                display: inline-block;
+                                                                            }
+                                                                            
+                                                                            .btn {
+                                                                                padding: 12px 18px;
+                                                                                border-radius: 40px;
+                                                                                text-align: center;
+                                                                                outline: 0;
+                                                                                border: 2px solid #FF4E50;
+                                                                                transition: .3s;
+                                                                            }
+                                                                            
+                                                                            .btn:hover {
+                                                                                background: #FF4E50;
+                                                                                color: white;
+                                                                                text-decoration: underline;
+                                                                            }
+                                                                            
+                                                                            .btn--red {
+                                                                                background-color: #FF4E50;
+                                                                            }
+                                                                            
+                                                                            .overlay {
+                                                                                position: absolute;
+                                                                                top: 0;
+                                                                                left: 0;
+                                                                                right: 0;
+                                                                                bottom: 0;
+                                                                                background-color: rgba(0, 0, 0, 0.1);
+                                                                                z-index: 2;
+                                                                            }
+                                                                            
+                                                                            .has-backdrop:after {
+                                                                                content: '';
+                                                                                position: absolute;
+                                                                                left: 0;
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                                border-radius: 4px;
+                                                                                background: linear-gradient(360deg, rgba(0, 0, 0, 0.3100) 0%, rgba(0, 0, 0, 0.3) 100%);
+                                                                            }
+                                                                            /* BANER */
+                                                                            
+                                                                            .baner {
+                                                                                width: 100%;
+                                                                                min-height: 100vh;
+                                                                                background: url(./img/Background.jpg);
+                                                                                background-size: cover;
+                                                                                background-position: center center;
+                                                                                display: flex;
+                                                                                align-items: center;
+                                                                                position: relative;
+                                                                            }
+                                                                            
+                                                                            .baner__wrap {
+                                                                                width: 100%;
+                                                                                min-height: 100vh;
+                                                                                background: linear-gradient(360deg, rgb(92, 67, 67) 0%, rgb(99, 85, 18) 100%);
+                                                                                opacity: 0.3;
+                                                                            }
+                                                                            
+                                                                            .header {
+                                                                                margin: 0;
+                                                                                position: absolute;
+                                                                                z-index: 100;
+                                                                                top: 0;
+                                                                                left: 0;
+                                                                                width: 100%;
+                                                                            }
+                                                                            
+                                                                            .header__menu {
+                                                                                width: 100%;
+                                                                                display: flex;
+                                                                                flex-direction: row;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                                margin-top: 70px;
+                                                                            }
+                                                                            
+                                                                            .header__menu__logo {
+                                                                                font-weight: bold;
+                                                                                font-size: 20px;
+                                                                                color: white;
+                                                                            }
+                                                                            
+                                                                            .header__menu__btns {
+                                                                                margin: 0;
+                                                                                padding: 0;
+                                                                                display: flex;
+                                                                                flex-direction: row;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                            }
+                                                                            
+                                                                            .header__menu__logo--hide {
+                                                                                display: none;
+                                                                            }
+                                                                            
+                                                                            .login {
+                                                                                margin-right: 14px;
+                                                                                padding: 2px;
+                                                                                text-align: center;
+                                                                                font-size: 14px;
+                                                                                padding: 5px;
+                                                                                color: white;
+                                                                            }
+                                                                            
+                                                                            .sign-up {
+                                                                                height: 36px;
+                                                                                padding: 8px 10px;
+                                                                                border: 2px solid white;
+                                                                                border-radius: 25px 25px;
+                                                                                font-size: 14px;
+                                                                                color: white;
+                                                                                text-align: center;
+                                                                            }
+                                                                            
+                                                                            .title {
+                                                                                margin-top: 20%;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                            }
+                                                                            
+                                                                            .title>h1 {
+                                                                                max-width: 470px;
+                                                                                margin-top: 25px;
+                                                                                font-weight: 800;
+                                                                                font-size: 52px;
+                                                                                line-height: 63px;
+                                                                                text-align: center;
+                                                                                color: #FFFFFF;
+                                                                            }
+                                                                            
+                                                                            .subtitle {
+                                                                                margin-top: 25px;
+                                                                                font-family: 'Roboto', sans-serif;
+                                                                                font-weight: 300;
+                                                                                font-size: 24px;
+                                                                                line-height: 24px;
+                                                                                color: #F7F3F2;
+                                                                            }
+                                                                            
+                                                                            .title__btn {
+                                                                                margin-top: 35px;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                padding: 12px 18px;
+                                                                                color: #FFFFFF;
+                                                                            }
+                                                                            /* MAIN */
+                                                                            
+                                                                            .block-title {
+                                                                                font-weight: bold;
+                                                                                font-size: 26px;
+                                                                                line-height: 32px;
+                                                                                color: #444444;
+                                                                            }
+                                                                            
+                                                                            .wraper {
+                                                                                width: 100%;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                            }
+                                                                            /* STEPS */
+                                                                            
+                                                                            .steps__blocks {
+                                                                                width: 100%;
+                                                                                margin-top: 35px;
+                                                                                display: flex;
+                                                                                flex-direction: row;
+                                                                                justify-content: space-between;
+                                                                            }
+                                                                            
+                                                                            .steps__item {
+                                                                                background-size: cover;
+                                                                                margin-right: 20px;
+                                                                                width: calc(100% * 1/3 - 20px);
+                                                                                min-height: 400px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: flex-end;
+                                                                                position: relative;
+                                                                                border-radius: 4px;
+                                                                            }
+                                                                            
+                                                                            .item-1 {
+                                                                                background-image: url(./remake/img/steps/step1.jpg);
+                                                                            }
+                                                                            
+                                                                            .item-2 {
+                                                                                background-image: url(./remake/img/steps/step2.jpg);
+                                                                            }
+                                                                            
+                                                                            .item-3 {
+                                                                                background-image: url(./remake/img/steps/step3.jpg);
+                                                                            }
+                                                                            
+                                                                            .steps__item:nth-last-child(1) {
+                                                                                margin-right: 0;
+                                                                            }
+                                                                            
+                                                                            .steps__item__content {
+                                                                                z-index: 2;
+                                                                                padding: 20px 25px;
+                                                                            }
+                                                                            
+                                                                            .steps__btn {
+                                                                                padding: 5px 14px;
+                                                                                font-size: 10px;
+                                                                                line-height: 12px;
+                                                                                display: flex;
+                                                                                align-items: flex-end;
+                                                                                letter-spacing: 2px;
+                                                                                color: #FFFFFF;
+                                                                            }
+                                                                            
+                                                                            .steps__title {
+                                                                                text-align: left;
+                                                                                margin-top: 15px;
+                                                                                font-weight: bold;
+                                                                                font-size: 24px;
+                                                                                line-height: 26px;
+                                                                                color: #FFFFFF;
+                                                                            }
+                                                                            
+                                                                            .steps__text {
+                                                                                margin-top: 10px;
+                                                                                text-align: left;
+                                                                                font-family: 'Roboto', sans-serif;
+                                                                                font-weight: 300;
+                                                                                font-size: 14px;
+                                                                                line-height: 14px;
+                                                                                color: #E3E3E3;
+                                                                            }
+                                                                            /* PARTNERS */
+                                                                            
+                                                                            .partners {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                margin-top: 35px;
+                                                                            }
+                                                                            
+                                                                            .partners__header {
+                                                                                font-weight: bold;
+                                                                                font-size: 26px;
+                                                                                line-height: 32px;
+                                                                                color: #444444;
+                                                                            }
+                                                                            
+                                                                            .partners__block {
+                                                                                align-items: flex-start;
+                                                                                margin-top: 35px;
+                                                                                display: flex;
+                                                                                flex-wrap: wrap;
+                                                                                justify-content: space-between;
+                                                                            }
+                                                                            
+                                                                            .partners__item {
+                                                                                width: calc(100% * 1/4 - 20px);
+                                                                                display: flex;
+                                                                                flex-wrap: wrap;
+                                                                                flex-direction: column;
+                                                                                align-items: center;
+                                                                                justify-content: space-between;
+                                                                                margin-top: 35px;
+                                                                            }
+                                                                            
+                                                                            .partners__pic {
+                                                                                width: 120px;
+                                                                                height: 120px;
+                                                                                border-radius: 50%;
+                                                                                position: relative;
+                                                                            }
+                                                                            
+                                                                            .pic-1 {
+                                                                                background-image: url('./remake/img/partners/partner1.jpg');
+                                                                            }
+                                                                            
+                                                                            .pic-2 {
+                                                                                background-image: url('./remake/img/partners/partner2.jpg');
+                                                                            }
+                                                                            
+                                                                            .pic-3 {
+                                                                                background-image: url('./remake/img/partners/partner3.jpg');
+                                                                            }
+                                                                            
+                                                                            .pic-4 {
+                                                                                background-image: url('./remake/img/partners/partner4.jpg');
+                                                                            }
+                                                                            
+                                                                            .partners__ico {
+                                                                                width: 32px;
+                                                                                height: 32px;
+                                                                                border-radius: 50%;
+                                                                                position: absolute;
+                                                                                bottom: 0;
+                                                                                right: 0;
+                                                                            }
+                                                                            
+                                                                            .partners__ico-music::after {
+                                                                                content: '';
+                                                                                width: 13px;
+                                                                                height: 16px;
+                                                                                position: absolute;
+                                                                                top: 50%;
+                                                                                left: 50%;
+                                                                                transform: translate(-50%, -50%);
+                                                                                background-image: url('./img/partners/icons/music.svg');
+                                                                            }
+                                                                            
+                                                                            .partners__ico-brush::after {
+                                                                                content: '';
+                                                                                width: 16px;
+                                                                                height: 16px;
+                                                                                position: absolute;
+                                                                                top: 50%;
+                                                                                left: 50%;
+                                                                                transform: translate(-50%, -50%);
+                                                                                background-image: url('./img/partners/icons/brush.svg');
+                                                                            }
+                                                                            
+                                                                            .partners__ico-camera::after {
+                                                                                content: '';
+                                                                                width: 16px;
+                                                                                height: 16px;
+                                                                                position: absolute;
+                                                                                top: 50%;
+                                                                                left: 50%;
+                                                                                transform: translate(-50%, -50%);
+                                                                                background-image: url('./img/partners/icons/camera.svg');
+                                                                            }
+                                                                            
+                                                                            .partners__ico-airplane::after {
+                                                                                content: '';
+                                                                                width: 19px;
+                                                                                height: 19px;
+                                                                                position: absolute;
+                                                                                top: 50%;
+                                                                                left: 50%;
+                                                                                transform: translate(-50%, -50%);
+                                                                                background-image: url('./img/partners/icons/airplane.svg');
+                                                                            }
+                                                                            
+                                                                            .partners__ico--red {
+                                                                                background: #FF4E50;
+                                                                            }
+                                                                            
+                                                                            .partners__ico--sky {
+                                                                                background: #19D4CA;
+                                                                            }
+                                                                            
+                                                                            .partners__ico--yellow {
+                                                                                background: #FFA710;
+                                                                            }
+                                                                            
+                                                                            .partners__ico--blue {
+                                                                                background: #667DF3;
+                                                                            }
+                                                                            
+                                                                            .partners__info {
+                                                                                margin-top: 16px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                            }
+                                                                            
+                                                                            .partners__name {
+                                                                                text-align: center;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                color: #444444;
+                                                                            }
+                                                                            
+                                                                            .partners__about {
+                                                                                font-family: 'Roboto', sans-serif;
+                                                                                font-weight: 300;
+                                                                                font-size: 14px;
+                                                                                line-height: 14px;
+                                                                                color: #666666;
+                                                                                margin-top: 25px;
+                                                                                text-align: center;
+                                                                            }
+                                                                            
+                                                                            .partners__btn {
+                                                                                margin-top: 35px;
+                                                                                padding: 12px 19px 11px 24px;
+                                                                                background-color: white;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                color: #FF4E50;
+                                                                            }
+                                                                            /* IDEAS */
+                                                                            
+                                                                            .ideas {
+                                                                                width: 100%;
+                                                                                margin-top: 35px;
+                                                                                display: flex;
+                                                                                flex-direction: row;
+                                                                                flex-wrap: wrap;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                            }
+                                                                            
+                                                                            .idea__item {
+                                                                                background-size: cover;
+                                                                                /* margin-right: 20px; */
+                                                                                margin-bottom: 20px;
+                                                                                min-height: 310px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: flex-end;
+                                                                                align-items: center;
+                                                                                position: relative;
+                                                                                border-radius: 4px;
+                                                                                background-repeat: no-repeat;
+                                                                            }
+                                                                            
+                                                                            .w1-3 {
+                                                                                width: calc(100% * 1/3 - 20px);
+                                                                            }
+                                                                            
+                                                                            .w2-3 {
+                                                                                width: calc(100% * 2/3 - 10px);
+                                                                            }
+                                                                            
+                                                                            .idea {
+                                                                                width: 100%;
+                                                                                height: 100%;
+                                                                                border-radius: 4px;
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                align-items: center;
+                                                                                position: absolute;
+                                                                                z-index: 1;
+                                                                                padding: 0 30px;
+                                                                            }
+                                                                            
+                                                                            .idea-title {
+                                                                                display: inline-block;
+                                                                                position: relative;
+                                                                                font-weight: bold;
+                                                                                max-width: 280px;
+                                                                                font-size: 22px;
+                                                                                line-height: 27px;
+                                                                                color: #FFFFFF;
+                                                                                text-align: center;
+                                                                                z-index: 15;
+                                                                            }
+                                                                            
+                                                                            .idea-1 {
+                                                                                background: url('./img/ideas/Bitmap.jpg');
+                                                                            }
+                                                                            
+                                                                            .idea-2 {
+                                                                                background: url('./img/ideas/Bitmap (1).jpg');
+                                                                                /* height: 324px; */
+                                                                            }
+                                                                            
+                                                                            .idea-3 {
+                                                                                background: url('./img/ideas/Bitmap (2).jpg');
+                                                                            }
+                                                                            
+                                                                            .idea-4 {
+                                                                                background: url('./img/ideas/Bitmap (3).jpg');
+                                                                            }
+                                                                            
+                                                                            .idea-5 {
+                                                                                background: url('./img/ideas/Bitmap (4).jpg');
+                                                                            }
+                                                                            
+                                                                            .idea-6 {
+                                                                                background: url('./img/ideas/Bitmap (5).jpg');
+                                                                            }
+                                                                            
+                                                                            .idea-7 {
+                                                                                background: url('./img/ideas/Bitmap (6).jpg');
+                                                                            }
+                                                                            /* SEARCH */
+                                                                            
+                                                                            .search {
+                                                                                margin-top: 45px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                            }
+                                                                            
+                                                                            .search__subtitle {
+                                                                                font-family: 'Roboto', sans-serif;
+                                                                                font-weight: 300;
+                                                                                font-size: 18px;
+                                                                                line-height: 14px;
+                                                                                text-align: center;
+                                                                                color: #666666
+                                                                            }
+                                                                            
+                                                                            .search__form {
+                                                                                margin-top: 25px;
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                flex-direction: row;
+                                                                            }
+                                                                            
+                                                                            .search__input {
+                                                                                width: 300px;
+                                                                                margin-right: 10px;
+                                                                                padding-left: 15px;
+                                                                                border-radius: 3px;
+                                                                                border: 1px solid #D4D4D4;
+                                                                                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                                                                            }
+                                                                            
+                                                                            .search-btn {
+                                                                                width: 175px;
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                color: #FFFFFF;
+                                                                            }
+                                                                            /* footer */
+                                                                            
+                                                                            footer {
+                                                                                border-top: 2px solid #FF4E50;
+                                                                                padding-top: 40px;
+                                                                                margin-top: 100px;
+                                                                            }
+                                                                            
+                                                                            .footer-menu {
+                                                                                margin-top: -90px;
+                                                                                display: flex;
+                                                                                position: relative;
+                                                                            }
+                                                                            
+                                                                            .footer-logo {
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                                font-size: 16px;
+                                                                                line-height: 20px;
+                                                                                color: #FF4E50;
+                                                                                margin-right: 120px;
+                                                                            }
+                                                                            
+                                                                            .footer-company {
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                color: #444444;
+                                                                            }
+                                                                            
+                                                                            .footer-company__menu {
+                                                                                margin-top: 11px;
+                                                                                margin-right: 170px;
+                                                                            }
+                                                                            
+                                                                            .footer-company__menu__item {
+                                                                                font-family: 'Roboto', sans-serif;
+                                                                                width: 100%;
+                                                                                font-weight: 300;
+                                                                                font-size: 14px;
+                                                                                line-height: 26px;
+                                                                                text-align: left;
+                                                                            }
+                                                                            
+                                                                            .footer-company__menu__item>a {
+                                                                                color: #999999;
+                                                                                padding: 3px;
+                                                                                text-align: left;
+                                                                            }
+                                                                            
+                                                                            .footer-company__menu__item>a:hover {
+                                                                                color: violet;
+                                                                                font-size: 15px;
+                                                                                text-decoration: underline;
+                                                                            }
+                                                                            
+                                                                            .footer-partners {
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                                font-weight: bold;
+                                                                                font-size: 14px;
+                                                                                line-height: 17px;
+                                                                                color: #444444;
+                                                                                margin-right: 250px;
+                                                                            }
+                                                                            
+                                                                            .footer-design {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                position: absolute;
+                                                                                top: 0px;
+                                                                                right: 0;
+                                                                            }
+                                                                            
+                                                                            .designed-by {
+                                                                                display: block;
+                                                                                font-family: 'Montserrat', sans-serif;
+                                                                                font-weight: bold;
+                                                                                font-size: 10px;
+                                                                                line-height: 12px;
+                                                                                letter-spacing: 1px;
+                                                                                color: #CCCCCC;
+                                                                                text-align: right;
+                                                                            }
+                                                                            
+                                                                            .footer-design__logo {
+                                                                                width: 110px;
+                                                                                height: 24px;
+                                                                                margin-top: 7px;
+                                                                                background-image: url('./img/footer/Bitmap.svg');
+                                                                            }
+                                                                            /* MEDIA */
+                                                                            /* media 768px */
+                                                                            
+                                                                            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                                                                                body {
+                                                                                    width: 100%;
+                                                                                    margin: 0 auto;
+                                                                                    padding: 0 10px;
+                                                                                    font-family: 'Montserrat', sans-serif;
+                                                                                }
+                                                                                .container {
+                                                                                    min-width: 768px;
+                                                                                    margin: 0 auto;
+                                                                                    padding: 0 10px;
+                                                                                    margin-top: 95px;
+                                                                                }
+                                                                                .header__menu {
+                                                                                    padding: 0 40px;
+                                                                                }
+                                                                                .partners__item {
+                                                                                    width: calc(100% / 2 - 20px);
+                                                                                    display: flex;
+                                                                                    flex-wrap: wrap;
+                                                                                    flex-direction: column;
+                                                                                    align-items: center;
+                                                                                    justify-content: space-between;
+                                                                                    margin-top: 35px;
+                                                                                }
+                                                                                .idea {
+                                                                                    padding: 0 15px;
+                                                                                }
+                                                                                @media screen and (max-width: 320px) {
+                                                                                    body {
+                                                                                        max-width: 320px;
+                                                                                        margin: 0 auto;
+                                                                                        padding: 0 10px;
+                                                                                        font-family: 'Montserrat', sans-serif;
+                                                                                    }
+                                                                                    .container {
+                                                                                        min-width: 320px;
+                                                                                        margin: 0 auto;
+                                                                                        padding: 0 10px;
+                                                                                        margin-top: 95px;
+                                                                                    }
+                                                                                    .header__menu {
+                                                                                        padding: 0 40px;
+                                                                                    }
+                                                                                    .partners__item {
+                                                                                        width: calc(100% - 20px);
+                                                                                        display: flex;
+                                                                                        flex-wrap: wrap;
+                                                                                        flex-direction: column;
+                                                                                        align-items: center;
+                                                                                        justify-content: space-between;
+                                                                                        margin-top: 35px;
+                                                                                    }
+                                                                                    .idea {
+                                                                                        padding: 0 15px;
+                                                                                    }
+                                                                                    /* }
+                                            .block-title {
+                                                font-size: 22px;
+                                            }
+                                            .baner {
+                                                min-width: 768px;
+                                            }
+                                            .partners__item {
+                                                width: calc(100% / 2);
+                                            } */
